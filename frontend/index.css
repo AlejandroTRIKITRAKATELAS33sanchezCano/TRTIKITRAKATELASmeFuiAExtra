@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Da 2', cursive;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+/*Variables*/
+:root{
+    --main-color: #2C363F;
+    --secundary-color:#FCF7F8;
+    --tertiary-color:#CED3DC;
+    --quaternary-color:#1D8A99;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+    
+    top: 0;
+    left:0;
+    right:0;
+    z-index:99;
+    background-color: var(--main-color);
+    padding: 16px 32px;
+    border-bottom: 3px solid var(--quaternary-color);
+}
+
+h1{
+    color: var(--secundary-color);
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+h4{
+    color: var(--secundary-color);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+section{
+    height: 100vh;
+}
+
+.cpu{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.cpu img{
+    max-width: 60%;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    margin-top: 300px;
+    padding: 50px 0px;
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--color-esqueleto);
+    background-image: url("IMG/background-footer.svg");
+    background-size: cover;
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img{
+    width: 180px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: var(--tertiary-color);
+    font-size: 18px;
+
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: var(--secundary-color);
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: var(--tertiary-color);
+    font-weight: 600;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: var(--tertiary-color);
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: var(--tertiary-color);
+}
